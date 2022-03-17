@@ -26,4 +26,4 @@ q12 = Platform.create!(question: 'What was the name of the WWF professional wres
 q13 = Platform.create!(question: 'What name represents the letter "M" in the NATO phonetic alphabet?', 
    answer: 'Mike', distractor_1: 'Matthew', distractor_2: 'Mark', distractor_3: 'Max', distractor_4: 'Matt' )
   
-  
+# user = User.create(username: "alexmerced", password: "pineapple", age: 35)
