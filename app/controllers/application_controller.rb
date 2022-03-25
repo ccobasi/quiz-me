@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-    skip_before_action :verify_authenticity_token
+    skip_before_action :verify_authenticity_token, raise: false
     before_action :authorized
 
   def encode_token(payload)
@@ -35,6 +35,6 @@ class ApplicationController < ActionController::API
   end
 
   def authorized
-    render json: { message: 'Please log in' }, status: :unauthorized unless logged_in?
+    # render json: { message: 'Please log in' }, status: :unauthorized unless logged_in?
   end
 end
